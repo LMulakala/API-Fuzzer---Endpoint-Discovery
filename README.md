@@ -25,7 +25,7 @@ The primary focus of this API fuzzer is to check the existence of URLs construct
 1. Constructing URLs from combinations of domains, subdomains, and paths.
 2. Sending HTTP requests to each URL to see if it exists.
 3. Retrieving and analyzing the response code returned by the server.
-##
+
 # The Reasons
 
 ## Why Did I Make It?
