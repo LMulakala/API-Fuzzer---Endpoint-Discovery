@@ -33,7 +33,8 @@ public class ApiFuzzer {
                         
                  // Set request method
                   connection.setRequestMethod("GET");
-                        
+         
+                // responseBody contains contents of the website (can be empty)
                   BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                   String responseBody = "";
                   String inputLine;
@@ -44,7 +45,10 @@ public class ApiFuzzer {
                         
                   // Output results
                   System.out.println("Endpoint: " + url);
-                  int responseCode = connection.getResponseCode(); // Get response code
+
+                  //response codes are  messages sent by a server to your client
+                  //shows if a request succeeded(200s), failed(400s & 500s), or needs further action(300s)
+                  int responseCode = connection.getResponseCode();
                   System.out.println("Response Code: " + responseCode); 
                   System.out.println("Response Body: " + responseBody);                        
                  
