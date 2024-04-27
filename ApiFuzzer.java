@@ -45,8 +45,7 @@ public class ApiFuzzer {
                         
                   // Output results
                   System.out.println("Endpoint: " + url);
-
-                  //response codes are  messages sent by a server to your client
+            
                   //shows if a request succeeded(200s), failed(400s & 500s), or needs further action(300s)
                   int responseCode = connection.getResponseCode();
                   System.out.println("Response Code: " + responseCode); 
